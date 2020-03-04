@@ -1,6 +1,7 @@
 <template>
   <ul class="navigation">
     <li><nuxt-link exact to="/">Home</nuxt-link></li>
+    <li><nuxt-link exact to="/dashboard">Dashboard</nuxt-link></li>
     <li v-if="!isAuthenticated"><nuxt-link to="/authenticate">Authenticate</nuxt-link></li>
     <li v-if="isAuthenticated"><nuxt-link to="/secret">Secret Section</nuxt-link></li>
   </ul>
